@@ -26,3 +26,10 @@
 *.exe
 *.out
 *.app
+packages/
+Project/shared/
+Project/imgui.ini
+memo_videoDevice.txt
+GFW.VC.VC.opendb
+GFW.VC.db
+Project/resrc/
