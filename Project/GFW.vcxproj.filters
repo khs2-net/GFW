@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{2752e41d-e1bc-4bae-b103-7fee782bc2ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{6ff5c424-2292-4abf-8f64-ea69c03d0c8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\ImGui">
+      <UniqueIdentifier>{344e889a-3197-4ef9-a8d9-cccfa4272341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\Device">
+      <UniqueIdentifier>{6104fec1-cce2-4ac5-83a3-7ffe68236cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Resource">
+      <UniqueIdentifier>{27a51633-cf99-4e81-98d9-bc957e6679c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Manager">
+      <UniqueIdentifier>{a1af1699-ed5c-48c2-bb20-7a7966dad0da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI">
+      <UniqueIdentifier>{cf6ec6b7-a278-4eb9-9838-dbb6a0a13180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\TextEditor">
+      <UniqueIdentifier>{78c9698a-023f-4d44-8982-ab8a12bb141e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\Console">
+      <UniqueIdentifier>{b9eb8328-5c33-49ab-8655-eaa81c616324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\Console\DefaultCommand">
+      <UniqueIdentifier>{0a19088b-4307-428e-bb2e-cd4bdd58277d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\QuickStart">
+      <UniqueIdentifier>{e47b2238-2982-4dd3-8afd-c24ae9e057fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\Support">
+      <UniqueIdentifier>{f3ca62f6-fd25-4893-8c23-d6e2bdc8eee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\Support\DXSupport">
+      <UniqueIdentifier>{92727581-d372-47e9-8ef5-40af3f1dde6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\ObjectView">
+      <UniqueIdentifier>{4344a11b-857d-42bc-aaaf-45302791a7ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Task">
+      <UniqueIdentifier>{6b6bde5e-868b-4bdc-baf4-51c6696ed729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager">
+      <UniqueIdentifier>{a4a7bfb7-22b2-45ef-8e9f-692bd1cff87e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Object">
+      <UniqueIdentifier>{f131700a-9321-4dbc-a685-331e103e30fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Object\Camera">
+      <UniqueIdentifier>{2d5f9a33-0be2-41d9-bce7-3e9cc1b95602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Shader">
+      <UniqueIdentifier>{a7c373d9-cc9a-4d6b-935f-e652f2255b2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\Device">
+      <UniqueIdentifier>{aa74ad84-b8e1-44bc-bc5b-1a59f6e16605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Resource">
+      <UniqueIdentifier>{b03ab3cd-71e3-44aa-b5f8-c990d63b741a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Manager">
+      <UniqueIdentifier>{5e75a0d6-db41-4ce2-8864-a55b59955981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Math">
+      <UniqueIdentifier>{fb76fadf-49e3-42a8-8304-4409049edf49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Primitive">
+      <UniqueIdentifier>{a12dcf12-a8dc-429d-9d48-7fc5f3ad227d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI">
+      <UniqueIdentifier>{ec9a2661-5d62-4dff-97ac-1169593b8d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\TextEditor">
+      <UniqueIdentifier>{74a1bafc-c204-48aa-b136-e48607bcee78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Console">
+      <UniqueIdentifier>{e98e055e-0dde-4721-920b-94880e3e5ed4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Console\DefaultCommand">
+      <UniqueIdentifier>{d5fef075-32fa-4027-a8ba-be0b14258ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\QuickStart">
+      <UniqueIdentifier>{6fc8ca33-9b00-4b71-88fb-23e1c473fd75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Support">
+      <UniqueIdentifier>{b280b0a6-3dcf-42f8-adc2-ce3d3d68b52d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Support\DXSupport">
+      <UniqueIdentifier>{e094bb8a-fec5-4017-918d-a81cb29d48ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\ObjectView">
+      <UniqueIdentifier>{470dc44e-5b73-4773-8107-f7643c0fef4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Task">
+      <UniqueIdentifier>{7693913d-30e6-42b0-a924-46a2a6f727a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Object">
+      <UniqueIdentifier>{8a14cb18-a4df-48af-8af5-e3240432101d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Object\Camera">
+      <UniqueIdentifier>{6c8bf042-ae12-4257-95e4-81888eb6f6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Shader">
+      <UniqueIdentifier>{9f4f1c30-568c-4c93-a10e-07296416f1a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\ShaderList">
+      <UniqueIdentifier>{2d9c9da0-0a28-4610-8e91-288b7f75de01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\ShaderList">
+      <UniqueIdentifier>{35c3c6d3-b647-4bfa-b237-efddc1cd43d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\QuickStart\DefaultQuickStart">
+      <UniqueIdentifier>{823b7db8-9e9a-47de-b074-3caf1fb78bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\QuickStart\DefaultQuickStart">
+      <UniqueIdentifier>{e3ce02af-b09c-4b90-8dfe-71cb9bfad2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Inspector">
+      <UniqueIdentifier>{f5bdc87a-bd8e-4e43-955f-ee1dc0c14d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\Inspector">
+      <UniqueIdentifier>{5e51619d-25e3-42f3-a173-2231f80067c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\RenderObject">
+      <UniqueIdentifier>{66635004-4657-4fb8-b607-003c7667b00d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\RenderObject">
+      <UniqueIdentifier>{2f273949-e5aa-4816-9e52-5bea2b42e7b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Device\DirextXDevice.cpp">
+      <Filter>src\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Device\WindowDevice.cpp">
+      <Filter>src\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resource\ResourceObject.cpp">
+      <Filter>src\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Manager\Manager.cpp">
+      <Filter>src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resource\Texture.cpp">
+      <Filter>src\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Device\Device.cpp">
+      <Filter>src\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\imgui\imgui.cpp">
+      <Filter>Shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\imgui\imgui_draw.cpp">
+      <Filter>Shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\imgui\imgui_impl_dx11.cpp">
+      <Filter>Shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\imgui\imgui_demo.cpp">
+      <Filter>Shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\TextEditor\TextEditor.cpp">
+      <Filter>src\GUI\TextEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Console\Console.cpp">
+      <Filter>src\GUI\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\QuickStart\QuickStart.cpp">
+      <Filter>src\GUI\QuickStart</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Task\Task.cpp">
+      <Filter>src\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Console\DefaultCommand\DefaultCommand.cpp">
+      <Filter>src\GUI\Console\DefaultCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Support\DXSupport.cpp">
+      <Filter>src\GUI\Support\DXSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\ObjectView\ObjectView.cpp">
+      <Filter>src\GUI\ObjectView</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader\Shader.cpp">
+      <Filter>src\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\ShaderList\ShaderList.cpp">
+      <Filter>src\GUI\ShaderList</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\QuickStart\DefaultQuickStart\DefaultQuickStart.cpp">
+      <Filter>src\GUI\QuickStart\DefaultQuickStart</Filter>
+    </ClCompile>
+    <ClCompile Include="include\GUI\GUI.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Inspector\Inspector.cpp">
+      <Filter>src\GUI\Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderObject\RenderObject.cpp">
+      <Filter>src\RenderObject</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\stdafx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Device.h">
+      <Filter>include\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Macro.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Device\WindowDevice.h">
+      <Filter>include\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Device\DirectXDevice.h">
+      <Filter>include\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResourceObject.h">
+      <Filter>include\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Manager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\Texture.h">
+      <Filter>include\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource.h">
+      <Filter>include\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\Vector.h">
+      <Filter>include\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitive\Primitive.h">
+      <Filter>include\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI.h">
+      <Filter>include\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\imgui\imgui_impl_dx11.h">
+      <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\imgui\imgui_internal.h">
+      <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\imgui\stb_rect_pack.h">
+      <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\imgui\stb_textedit.h">
+      <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\imgui\stb_truetype.h">
+      <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\imgui\imconfig.h">
+      <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\imgui\imgui.h">
+      <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\TextEditor\TextEditor.h">
+      <Filter>include\GUI\TextEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Console\Console.h">
+      <Filter>include\GUI\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\QuickStart\QuickStart.h">
+      <Filter>include\GUI\QuickStart</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Task\Task.h">
+      <Filter>include\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Console\DefaultCommand\DefaultCommand.h">
+      <Filter>include\GUI\Console\DefaultCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Support\DXSupport.h">
+      <Filter>include\GUI\Support\DXSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\Matrix.h">
+      <Filter>include\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\Math.h">
+      <Filter>include\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\ObjectView\ObjectView.h">
+      <Filter>include\GUI\ObjectView</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Shader.h">
+      <Filter>include\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\ShaderList\ShaderList.h">
+      <Filter>include\GUI\ShaderList</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\QuickStart\DefaultQuickStart\DefaultQuickStart.h">
+      <Filter>include\GUI\QuickStart\DefaultQuickStart</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Inspector\Inspector.h">
+      <Filter>include\GUI\Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderObject\RenderObject.h">
+      <Filter>include\RenderObject</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Shader\PS_Main.hlsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\VS_Main.hlsl">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
