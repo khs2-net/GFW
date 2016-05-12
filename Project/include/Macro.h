@@ -4,10 +4,15 @@
 
 #define COMPTR(v) _com_ptr_t<_com_IIID<v,&__uuidof(v)>>
 
+
 #ifdef _UNICODE
 typedef std::wstring String;
+typedef LPCWSTR LPCGFWCHAR;
+typedef WCHAR GFWCHAR;
 #else
 typedef std::string String;
+typedef LPCSTR LPCGFWCHAR;
+typedef CHAR GFWCHAR;
 #endif
 
 

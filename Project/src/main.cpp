@@ -24,7 +24,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	};
 
 	//DirectX11デバイスも同時に初期化がかかる
-	window.Init(hInstance, nCmdShow, TEXT("DirectX11 Test Program"), 1280, 720, true);
+	window.Init(hInstance, nCmdShow, TEXT("GFW"), 1280, 720, true);
 
 	COMPTR(ID3D11Buffer) vexbuffer;
 	ID3D11Buffer *buf = nullptr;
@@ -111,8 +111,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 
 
 	//InputLayoutを作る前にシェーダーの生成を行う必要がある
-	D3D11_INPUT_ELEMENT_DESC element[] =
-	{
+	D3D11_INPUT_ELEMENT_DESC element[] ={
 		{"POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
 		{"TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, 16, D3D11_INPUT_PER_VERTEX_DATA, 0},
 		{"COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, 24, D3D11_INPUT_PER_VERTEX_DATA, 0},
@@ -191,6 +190,10 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 			ImGui::ShowTestWindow(&show_test_window);
 		});
 
+		static GFW::Type::GFW_RASTERIZER_DESC rs;
+		GFW::GUI::Selector_RASTERIZER_DESC(rs);
+		static GFW::Type::GFW_INPUT_ELEMENT_DESC_ARRAY elem;
+		GFW::GUI::Selector_INPUT_ELEMENT_DESC_ARRAY(elem);
 
 		device.getContext()->OMSetRenderTargets(1,rtv, nullptr);
 

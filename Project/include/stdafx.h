@@ -20,6 +20,7 @@
 #include <list>
 #include <map>
 #include <macro.h>
+#include <./Type/Type.h>
 
 #include <RenderObject/RenderObject.h>
 #include <Math/Math.h>

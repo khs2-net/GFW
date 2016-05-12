@@ -78,14 +78,14 @@ ULONG QuickStart::Draw() {
 			static std::vector<const char*> items;
 			items.clear();
 			for (auto &v : this->apps) {
-				int i = v.first.find(str);
+				int i = (int)v.first.find(str);
 				if (!i) {
 					items.push_back(v.first.c_str());
 				}
 			}
 			if (items.size() > 0) {
 				static int select = 0;
-				ImGui::ListBox("", &select, &items[0], items.size());
+				ImGui::ListBox("", &select, &items[0],(int) items.size());
 				if (io.KeysDown[ImGuiKey_DownArrow]) {
 					strcpy(this->cmdbuf, items[select]);
 				}

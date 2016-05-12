@@ -95,7 +95,7 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>$(ProjectDir)\include;$(DXSDK_DIR)\include;$(ProjectDir)\Shader;$(ProjectDir)\shared</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_Debug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DX11;_Debug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/Zm300 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -116,7 +116,7 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>$(ProjectDir)\include;$(DXSDK_DIR)\include;$(ProjectDir)\Shader;$(ProjectDir)\shared</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_Debug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DX11;_Debug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/Zm300 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -140,6 +140,7 @@
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>$(ProjectDir)\include;$(DXSDK_DIR)\include;$(ProjectDir)\Shader;$(ProjectDir)\shared</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm300 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>DX11;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -163,6 +164,7 @@
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>$(ProjectDir)\include;$(DXSDK_DIR)\include;$(ProjectDir)\Shader;$(ProjectDir)\shared</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm300 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>DX11;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -181,6 +183,7 @@
     <ClCompile Include="shared\imgui\imgui_demo.cpp" />
     <ClCompile Include="shared\imgui\imgui_draw.cpp" />
     <ClCompile Include="shared\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="shared\imgui\imgui_user.cpp" />
     <ClCompile Include="src\Device\Device.cpp" />
     <ClCompile Include="src\Device\DirextXDevice.cpp" />
     <ClCompile Include="src\Device\WindowDevice.cpp" />
@@ -230,10 +233,12 @@
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\stdafx.h" />
     <ClInclude Include="include\Task\Task.h" />
+    <ClInclude Include="include\Type\Type.h" />
     <ClInclude Include="shared\imgui\imconfig.h" />
     <ClInclude Include="shared\imgui\imgui.h" />
     <ClInclude Include="shared\imgui\imgui_impl_dx11.h" />
     <ClInclude Include="shared\imgui\imgui_internal.h" />
+    <ClInclude Include="shared\imgui\imgui_user.h" />
     <ClInclude Include="shared\imgui\stb_rect_pack.h" />
     <ClInclude Include="shared\imgui\stb_textedit.h" />
     <ClInclude Include="shared\imgui\stb_truetype.h" />

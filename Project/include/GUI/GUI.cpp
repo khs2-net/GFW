@@ -4,6 +4,9 @@ using namespace GFW;
 
 Gui::Gui() {
 
+	ImGuiIO& io = ImGui::GetIO();
+	//io.Fonts->AddFontFromFileTTF("./resrc/fonts/meiryo.ttf", 18.0f, NULL, io.Fonts->GetGlyphRangesJapanese());
+	io.Fonts->AddFontFromFileTTF("./resrc/fonts/ArialUni.ttf", 18.0f, NULL, io.Fonts->GetGlyphRangesJapanese());
 }
 Gui::~Gui() {
 

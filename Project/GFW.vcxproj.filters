@@ -151,6 +151,9 @@
     <Filter Include="src\GUI\Selector">
       <UniqueIdentifier>{7709549f-22d9-4099-9e0b-905a5c23e909}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\Type">
+      <UniqueIdentifier>{6d4225c0-35ea-45cd-b491-821d6df20107}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -230,6 +233,9 @@
     </ClCompile>
     <ClCompile Include="src\GUI\Selector\Selector.cpp">
       <Filter>src\GUI\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\imgui\imgui_user.cpp">
+      <Filter>Shared\ImGui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -334,6 +340,12 @@
     </ClInclude>
     <ClInclude Include="include\GUI\Selector\Selector.h">
       <Filter>include\GUI\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Type\Type.h">
+      <Filter>include\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\imgui\imgui_user.h">
+      <Filter>Shared\ImGui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
