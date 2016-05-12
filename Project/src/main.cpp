@@ -165,6 +165,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	DEBUG(GFW::GUI::Default::Init_Commands());
 	DEBUG(GFW::GUI::Default::Init_Quickstart());
 
+
 	auto function = []() {
 		DEBUG(static bool show_test_window = true);
 		GFW::Shader &sh = GFW::Shader::getInstance();

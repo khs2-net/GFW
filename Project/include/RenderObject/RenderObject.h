@@ -13,11 +13,11 @@ public:
 protected:
 private:
 	//RenderState
-	ID3D11SamplerState		*ss;
-	ID3D11BlendState		*bs;
-	ID3D11RasterizerState	*rs;
-	ID3D11InputLayout		*il;
-	D3D_PRIMITIVE_TOPOLOGY	primtive_topology;
+	ID3D11SamplerState		**ss;
+	ID3D11BlendState		**bs;
+	ID3D11RasterizerState	**rs;
+	ID3D11InputLayout		**il;
+	D3D_PRIMITIVE_TOPOLOGY	**primtive_topology;
 
 	//シェーダー回り
 	ID3D11VertexShader		**vs;

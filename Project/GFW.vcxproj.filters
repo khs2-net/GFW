@@ -21,9 +21,6 @@
     <Filter Include="src\Device">
       <UniqueIdentifier>{6104fec1-cce2-4ac5-83a3-7ffe68236cb2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Resource">
-      <UniqueIdentifier>{27a51633-cf99-4e81-98d9-bc957e6679c6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\Manager">
       <UniqueIdentifier>{a1af1699-ed5c-48c2-bb20-7a7966dad0da}</UniqueIdentifier>
     </Filter>
@@ -72,9 +69,6 @@
     </Filter>
     <Filter Include="include\Device">
       <UniqueIdentifier>{aa74ad84-b8e1-44bc-bc5b-1a59f6e16605}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\Resource">
-      <UniqueIdentifier>{b03ab3cd-71e3-44aa-b5f8-c990d63b741a}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\Manager">
       <UniqueIdentifier>{5e75a0d6-db41-4ce2-8864-a55b59955981}</UniqueIdentifier>
@@ -145,6 +139,24 @@
     <Filter Include="src\RenderObject">
       <UniqueIdentifier>{2f273949-e5aa-4816-9e52-5bea2b42e7b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\Generator">
+      <UniqueIdentifier>{0f1b3450-66cf-4c20-9941-b1510277ed87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="work">
+      <UniqueIdentifier>{67c07a5e-ef85-473f-a864-b7ef07ab6b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="work\hResource">
+      <UniqueIdentifier>{b03ab3cd-71e3-44aa-b5f8-c990d63b741a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="work\hResource\type">
+      <UniqueIdentifier>{13f76372-5966-40e7-8c0d-06212a07c043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="work\sResource">
+      <UniqueIdentifier>{27a51633-cf99-4e81-98d9-bc957e6679c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="work\sResource\type">
+      <UniqueIdentifier>{c1fdf1bb-be06-4e68-8540-bc66dd16c14e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -157,13 +169,10 @@
       <Filter>src\Device</Filter>
     </ClCompile>
     <ClCompile Include="src\Resource\ResourceObject.cpp">
-      <Filter>src\Resource</Filter>
+      <Filter>work\sResource</Filter>
     </ClCompile>
     <ClCompile Include="src\Manager\Manager.cpp">
       <Filter>src\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Resource\Texture.cpp">
-      <Filter>src\Resource</Filter>
     </ClCompile>
     <ClCompile Include="src\Device\Device.cpp">
       <Filter>src\Device</Filter>
@@ -219,6 +228,15 @@
     <ClCompile Include="src\RenderObject\RenderObject.cpp">
       <Filter>src\RenderObject</Filter>
     </ClCompile>
+    <ClCompile Include="src\Resource\Texture.cpp">
+      <Filter>work\sResource\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resource\ResourceManager.cpp">
+      <Filter>work\sResource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resource\ResourceAdapter.cpp">
+      <Filter>work\sResource</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\stdafx.h">
@@ -236,17 +254,8 @@
     <ClInclude Include="include\Device\DirectXDevice.h">
       <Filter>include\Device</Filter>
     </ClInclude>
-    <ClInclude Include="include\ResourceObject.h">
-      <Filter>include\Resource</Filter>
-    </ClInclude>
     <ClInclude Include="include\Manager.h">
       <Filter>include\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Resource\Texture.h">
-      <Filter>include\Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Resource.h">
-      <Filter>include\Resource</Filter>
     </ClInclude>
     <ClInclude Include="include\Math\Vector.h">
       <Filter>include\Math</Filter>
@@ -319,6 +328,18 @@
     </ClInclude>
     <ClInclude Include="include\RenderObject\RenderObject.h">
       <Filter>include\RenderObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\ResourceObject.h">
+      <Filter>work\hResource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\ResourceManager.h">
+      <Filter>work\hResource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\ResourceAdapter.h">
+      <Filter>work\hResource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\Texture.h">
+      <Filter>work\hResource\type</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

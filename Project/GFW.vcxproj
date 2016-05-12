@@ -71,6 +71,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platformtarget)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platformtarget)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platformtarget)\$(Configuration)\</OutDir>
@@ -79,6 +80,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)bin\$(Platformtarget)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platformtarget)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)bin\$(Platformtarget)\$(Configuration)\</OutDir>
@@ -194,6 +196,8 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Manager\Manager.cpp" />
     <ClCompile Include="src\RenderObject\RenderObject.cpp" />
+    <ClCompile Include="src\Resource\ResourceAdapter.cpp" />
+    <ClCompile Include="src\Resource\ResourceManager.cpp" />
     <ClCompile Include="src\Resource\ResourceObject.cpp" />
     <ClCompile Include="src\Resource\Texture.cpp" />
     <ClCompile Include="src\Shader\Shader.cpp" />
@@ -219,8 +223,9 @@
     <ClInclude Include="include\Math\Vector.h" />
     <ClInclude Include="include\Primitive\Primitive.h" />
     <ClInclude Include="include\RenderObject\RenderObject.h" />
-    <ClInclude Include="include\Resource.h" />
-    <ClInclude Include="include\ResourceObject.h" />
+    <ClInclude Include="include\Resource\ResourceAdapter.h" />
+    <ClInclude Include="include\Resource\ResourceManager.h" />
+    <ClInclude Include="include\Resource\ResourceObject.h" />
     <ClInclude Include="include\Resource\Texture.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\stdafx.h" />

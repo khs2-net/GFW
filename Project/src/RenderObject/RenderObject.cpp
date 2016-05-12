@@ -1,7 +1,7 @@
 using namespace GFW;
 
 RenderObject::RenderObject() {
-	this->primtive_topology = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP;
+	this->primtive_topology = nullptr;
 }
 RenderObject::~RenderObject() {
 
@@ -12,8 +12,8 @@ ULONG RenderObject::setState() {
 	GFW::DX11Device &device = GFW::DX11Device::getInstance();
 
 
-	device.getContext()->RSSetState(this->rs);
-	device.getContext()->IASetPrimitiveTopology(this->primtive_topology);
+	device.getContext()->RSSetState(*this->rs);
+	device.getContext()->IASetPrimitiveTopology(**this->primtive_topology);
 
 
 
