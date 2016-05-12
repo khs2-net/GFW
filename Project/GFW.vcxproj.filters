@@ -39,12 +39,6 @@
     <Filter Include="src\GUI\QuickStart">
       <UniqueIdentifier>{e47b2238-2982-4dd3-8afd-c24ae9e057fe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\GUI\Support">
-      <UniqueIdentifier>{f3ca62f6-fd25-4893-8c23-d6e2bdc8eee1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\GUI\Support\DXSupport">
-      <UniqueIdentifier>{92727581-d372-47e9-8ef5-40af3f1dde6b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\GUI\ObjectView">
       <UniqueIdentifier>{4344a11b-857d-42bc-aaaf-45302791a7ca}</UniqueIdentifier>
     </Filter>
@@ -93,12 +87,6 @@
     </Filter>
     <Filter Include="include\GUI\QuickStart">
       <UniqueIdentifier>{6fc8ca33-9b00-4b71-88fb-23e1c473fd75}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\GUI\Support">
-      <UniqueIdentifier>{b280b0a6-3dcf-42f8-adc2-ce3d3d68b52d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\GUI\Support\DXSupport">
-      <UniqueIdentifier>{e094bb8a-fec5-4017-918d-a81cb29d48ba}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\GUI\ObjectView">
       <UniqueIdentifier>{470dc44e-5b73-4773-8107-f7643c0fef4c}</UniqueIdentifier>
@@ -157,6 +145,12 @@
     <Filter Include="work\sResource\type">
       <UniqueIdentifier>{c1fdf1bb-be06-4e68-8540-bc66dd16c14e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\GUI\Selector">
+      <UniqueIdentifier>{531fff3a-ad26-4f24-92b8-3d0aeb2b6a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\Selector">
+      <UniqueIdentifier>{7709549f-22d9-4099-9e0b-905a5c23e909}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -204,9 +198,6 @@
     <ClCompile Include="src\GUI\Console\DefaultCommand\DefaultCommand.cpp">
       <Filter>src\GUI\Console\DefaultCommand</Filter>
     </ClCompile>
-    <ClCompile Include="src\GUI\Support\DXSupport.cpp">
-      <Filter>src\GUI\Support\DXSupport</Filter>
-    </ClCompile>
     <ClCompile Include="src\GUI\ObjectView\ObjectView.cpp">
       <Filter>src\GUI\ObjectView</Filter>
     </ClCompile>
@@ -236,6 +227,9 @@
     </ClCompile>
     <ClCompile Include="src\Resource\ResourceAdapter.cpp">
       <Filter>work\sResource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Selector\Selector.cpp">
+      <Filter>src\GUI\Selector</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -302,9 +296,6 @@
     <ClInclude Include="include\GUI\Console\DefaultCommand\DefaultCommand.h">
       <Filter>include\GUI\Console\DefaultCommand</Filter>
     </ClInclude>
-    <ClInclude Include="include\GUI\Support\DXSupport.h">
-      <Filter>include\GUI\Support\DXSupport</Filter>
-    </ClInclude>
     <ClInclude Include="include\Math\Matrix.h">
       <Filter>include\Math</Filter>
     </ClInclude>
@@ -340,6 +331,9 @@
     </ClInclude>
     <ClInclude Include="include\Resource\Texture.h">
       <Filter>work\hResource\type</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Selector\Selector.h">
+      <Filter>include\GUI\Selector</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

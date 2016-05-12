@@ -30,7 +30,7 @@ private:
 #include <./imgui/imgui.h>
 #include <./imgui/imgui_impl_dx11.h>
 
-#include <./GUI/Support/DXSupport.h>
+#include <./GUI/Selector/Selector.h>
 //ŠeGUI
 #include <./GUI/QuickStart/QuickStart.h>
 #include <./GUI/Console/Console.h>
