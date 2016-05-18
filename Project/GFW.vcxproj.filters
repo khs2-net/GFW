@@ -237,6 +237,9 @@
     <ClCompile Include="shared\imgui\imgui_user.cpp">
       <Filter>Shared\ImGui</Filter>
     </ClCompile>
+    <ClCompile Include="src\stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\stdafx.h">

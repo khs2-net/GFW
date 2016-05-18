@@ -125,7 +125,7 @@ static const char* INPUTELEMENTCLASSIFICATION[] = {
 "D3D11_INPUT_PER_VERTEX_DATA",
 "D3D11_INPUT_PER_INSTANCE_DATA",
 };
-//ImGui::Input回りでunsignedの対応してないのでバグが出る可能性あり
+
 void GFW::GUI::Selector_INPUT_ELEMENT_DESC(GFW::Type::GFW_INPUT_ELEMENT_DESC &value) {
 	ImGui::PushID((int)&value);
 	ImGui::InputText("Semantic", value._SemanticName, sizeof(value._SemanticName));

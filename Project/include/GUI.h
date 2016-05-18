@@ -25,7 +25,7 @@ private:
 }
 
 
-#ifdef _Debug
+#if 1//_Debug
 //デバッグ用のGUI
 #include <./imgui/imgui.h>
 #include <./imgui/imgui_impl_dx11.h>

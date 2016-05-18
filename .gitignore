@@ -34,3 +34,9 @@ Project/shared/
 *.exe
 *.out
 *.app
+/.vs/GFW/v14
+/GFW.VC.VC.opendb
+/ipch/GFW-43791a6a
+/Project/resrc
+/save
+/Project/imgui.ini

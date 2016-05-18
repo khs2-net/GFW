@@ -204,6 +204,7 @@
     <ClCompile Include="src\Resource\ResourceObject.cpp" />
     <ClCompile Include="src\Resource\Texture.cpp" />
     <ClCompile Include="src\Shader\Shader.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Device.h" />
