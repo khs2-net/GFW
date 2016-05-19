@@ -28,13 +28,17 @@ public:
 	ULONG LoadPixelShader(std::string name,std::string);
 	ULONG SetPixelShader(std::string name);
 	ULONG RemovePixelShader(std::string name);
+	ULONG AttachPixelShader(std::string name, ID3D11PixelShader*);
 	std::map<std::string, ID3D11PixelShader*> &getPixelShaderMap() { return this->pixsh; }
+	ID3D11PixelShader* getPixelShader(std::string);
 
 	ULONG FindVertexShader(std::string name);
 	ULONG LoadVertexShader(std::string name, std::string);
 	ULONG SetVertexShader(std::string name);
 	ULONG RemoveVertexShader(std::string name);
+	ULONG AttachVertexShader(std::string name, ID3D11VertexShader*);
 	std::map<std::string, ID3D11VertexShader*> &getVertexShaderMap() { return this->versh; }
+	ID3D11VertexShader* getVertexShader(std::string);
 
 
 protected:

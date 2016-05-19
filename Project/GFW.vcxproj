@@ -189,6 +189,7 @@
     <ClCompile Include="src\Device\WindowDevice.cpp" />
     <ClCompile Include="src\GUI\Console\Console.cpp" />
     <ClCompile Include="src\GUI\Console\DefaultCommand\DefaultCommand.cpp" />
+    <ClCompile Include="src\GUI\Explorer\Explorer.cpp" />
     <ClCompile Include="src\GUI\Inspector\Inspector.cpp" />
     <ClCompile Include="src\GUI\ObjectView\ObjectView.cpp" />
     <ClCompile Include="src\GUI\QuickStart\DefaultQuickStart\DefaultQuickStart.cpp" />
@@ -213,6 +214,7 @@
     <ClInclude Include="include\GUI.h" />
     <ClInclude Include="include\GUI\Console\Console.h" />
     <ClInclude Include="include\GUI\Console\DefaultCommand\DefaultCommand.h" />
+    <ClInclude Include="include\GUI\Explorer\Explorer.h" />
     <ClInclude Include="include\GUI\Inspector\Inspector.h" />
     <ClInclude Include="include\GUI\ObjectView\ObjectView.h" />
     <ClInclude Include="include\GUI\QuickStart\DefaultQuickStart\DefaultQuickStart.h" />

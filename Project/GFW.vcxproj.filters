@@ -154,6 +154,12 @@
     <Filter Include="include\Type">
       <UniqueIdentifier>{6d4225c0-35ea-45cd-b491-821d6df20107}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\GUI\Explorer">
+      <UniqueIdentifier>{10eae67c-6b63-42b7-8fc6-bd5f6a964dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Explorer">
+      <UniqueIdentifier>{0e0996c5-57ba-4200-854f-a3eb1061131a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -207,9 +213,6 @@
     <ClCompile Include="src\Shader\Shader.cpp">
       <Filter>src\Shader</Filter>
     </ClCompile>
-    <ClCompile Include="src\GUI\ShaderList\ShaderList.cpp">
-      <Filter>src\GUI\ShaderList</Filter>
-    </ClCompile>
     <ClCompile Include="src\GUI\QuickStart\DefaultQuickStart\DefaultQuickStart.cpp">
       <Filter>src\GUI\QuickStart\DefaultQuickStart</Filter>
     </ClCompile>
@@ -239,6 +242,12 @@
     </ClCompile>
     <ClCompile Include="src\stdafx.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\ShaderList\ShaderList.cpp">
+      <Filter>src\GUI\ShaderList</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Explorer\Explorer.cpp">
+      <Filter>src\GUI\Explorer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -349,6 +358,9 @@
     </ClInclude>
     <ClInclude Include="shared\imgui\imgui_user.h">
       <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Explorer\Explorer.h">
+      <Filter>include\GUI\Explorer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

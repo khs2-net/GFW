@@ -15,6 +15,8 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	GFW::WindowDevice &window = GFW::WindowDevice::getInstance();
 
 	GFW::DX11Device &device = GFW::DX11Device::getInstance();
+	GFW::GUI::Console &con = GFW::GUI::Console::getInstance();
+	GFW::Shader &sh = GFW::Shader::getInstance();
 
 	GFW::Math::Vertex vex[] = {
 		{ 0.3f,0.5f,1.0f,0.0f,1,0, 0,1,1,1},
@@ -25,6 +27,9 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 
 	//DirectX11デバイスも同時に初期化がかかる
 	window.Init(hInstance, nCmdShow, TEXT("GFW"), 1280, 720, true);
+
+	DEBUG(GFW::GUI::Default::Init_Commands());
+	DEBUG(GFW::GUI::Default::Init_Quickstart());
 
 	COMPTR(ID3D11Buffer) vexbuffer;
 	ID3D11Buffer *buf = nullptr;
@@ -45,19 +50,10 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	device.getContext()->Unmap(buf, NULL);
 
 	vexbuffer.Attach(buf);
-	COMPTR(ID3D11VertexShader) vsmain;
-	COMPTR(ID3D11PixelShader) psmain;
+
 	ID3D11VertexShader *vsmain_buf;
 	ID3D11PixelShader *psmain_buf;
 
-	ID3D10Blob *vsbuf, *psbuf;
-	D3DX11CompileFromFile(TEXT("./Shader/VS_Main2.hlsl"), 0, 0, "main", "vs_5_0", 0, 0, 0, &vsbuf, 0, 0);
-	D3DX11CompileFromFile(TEXT("./Shader/PS_Main4.hlsl"), 0, 0, "main", "ps_5_0", 0, 0, 0, &psbuf, 0, 0);
-	device.getDevice()->CreateVertexShader(vsbuf->GetBufferPointer(), vsbuf->GetBufferSize(), nullptr, &vsmain_buf);
-	device.getDevice()->CreatePixelShader(psbuf->GetBufferPointer(), psbuf->GetBufferSize(), nullptr, &psmain_buf);
-
-	vsmain.Attach(vsmain_buf);
-	psmain.Attach(psmain_buf);
 
 
 	ConstantBuffer mtx;
@@ -117,6 +113,19 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 		{"COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, 24, D3D11_INPUT_PER_VERTEX_DATA, 0},
 	};
 
+
+	ID3D10Blob *vsbuf, *psbuf;
+	D3DX11CompileFromFile(TEXT("./Shader/VS_Main2.hlsl"), 0, 0, "main", "vs_5_0", 0, 0, 0, &vsbuf, 0, 0);
+	D3DX11CompileFromFile(TEXT("./Shader/PS_Main4.hlsl"), 0, 0, "main", "ps_5_0", 0, 0, 0, &psbuf, 0, 0);
+	device.getDevice()->CreateVertexShader(vsbuf->GetBufferPointer(), vsbuf->GetBufferSize(), nullptr, &vsmain_buf);
+	device.getDevice()->CreatePixelShader(psbuf->GetBufferPointer(), psbuf->GetBufferSize(), nullptr, &psmain_buf);
+
+	sh.AttachPixelShader("main", psmain_buf);
+	sh.AttachVertexShader("main", vsmain_buf);
+	sh.SetPixelShader("main");
+	sh.SetVertexShader("main");
+	
+
 	COMPTR(ID3D11InputLayout) layout;
 	ID3D11InputLayout * inputlayout;
 
@@ -158,11 +167,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 
 	//パイプライン回りの設定
 	device.getContext()->IASetInputLayout(layout.GetInterfacePtr());
-	device.getContext()->VSSetShader(vsmain.GetInterfacePtr(), 0, 0);
-	device.getContext()->PSSetShader(psmain.GetInterfacePtr(), 0, 0);
 
-	DEBUG(GFW::GUI::Default::Init_Commands());
-	DEBUG(GFW::GUI::Default::Init_Quickstart());
 
 
 	auto function = []() {
@@ -205,7 +210,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	};
 	window.MessageLoop(function);
 
-
+	
 	return 0;
 }
 

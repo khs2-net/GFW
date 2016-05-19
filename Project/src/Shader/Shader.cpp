@@ -144,6 +144,20 @@ ULONG Shader::RemovePixelShader(std::string name){
 	this->pixsh.erase(name);
 	return 0;
 }
+ULONG Shader::AttachPixelShader(std::string name, ID3D11PixelShader *sh) {
+	if(this->FindPixelShader(name)){
+		return -1;
+	}
+	this->pixsh[name] = sh;
+	return 0;
+}
+
+ID3D11PixelShader* Shader::getPixelShader(std::string str) {
+	if (!this->FindPixelShader(str)) {
+		return nullptr;
+	}
+	return this->pixsh[str];
+}
 
 ULONG Shader::LoadVertexShader(std::string name, std::string pass){
 	GFW::DX11Device &device = GFW::DX11Device::getInstance();
@@ -172,6 +186,19 @@ ULONG Shader::RemoveVertexShader(std::string name){
 	this->versh[name]->Release();
 	this->versh.erase(name);
 	return 0;
+}
+ULONG Shader::AttachVertexShader(std::string name, ID3D11VertexShader *sh) {
+	if (this->FindVertexShader(name)) {
+		return -1;
+	}
+	this->versh[name] = sh;
+	return 0;
+}
+ID3D11VertexShader* Shader::getVertexShader(std::string str) {
+	if (!this->FindVertexShader(str)) {
+		return nullptr;
+	}
+	return this->versh[str];
 }
 //
 //Shader“Ç‚İ‚İ
