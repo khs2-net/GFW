@@ -40,6 +40,7 @@ public:
 	std::string &getLog() { return this->log; }
 
 	//‰¼•`‰æ
+	ULONG Update();
 	ULONG Draw();
 	int TextEditCallback(ImGuiTextEditCallbackData* data);
 protected:

@@ -5,6 +5,7 @@
 namespace GFW {
 class _Gui {
 public:
+	virtual ULONG Update() = 0;
 	virtual ULONG Draw() = 0;
 };
 class Gui {
@@ -16,6 +17,7 @@ public:
 	}
 	ULONG Attach(const _Gui*);
 	ULONG Remove(const _Gui*);
+	ULONG Update();
 	ULONG Draw();
 protected:
 private:
@@ -25,8 +27,6 @@ private:
 }
 
 
-#if 1//_Debug
-//デバッグ用のGUI
 #include <./imgui/imgui.h>
 #include <./imgui/imgui_impl_dx11.h>
 
@@ -34,7 +34,7 @@ private:
 //各GUI
 #include <./GUI/QuickStart/QuickStart.h>
 #include <./GUI/Console/Console.h>
-
+#include <./GUI/PopItem/PopItem.h>
 //DefaultCommand
 #include <./GUI/Console/DefaultCommand/DefaultCommand.h>
 #include <./GUI/QuickStart/DefaultQuickStart/DefaultQuickStart.h>
@@ -43,9 +43,8 @@ private:
 #include <./GUI/ShaderList/ShaderList.h>
 
 #include <./GUI/Inspector/Inspector.h>
-#else
-//自前で用意したGUI
-#endif
+
+#include <./GUI/Explorer/Explorer.h>
 
 #pragma warning(pop)
 #endif

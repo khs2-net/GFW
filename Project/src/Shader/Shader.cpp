@@ -42,17 +42,17 @@ ULONG Command_Shader::Run(vector<string> argv) {
 			}
 		}
 	} else if (!argv[1].compare("load")) {
-		if (argv.size() < 4) {
+		if (argv.size() < 5) {
 			con.AddLog("Error argv \n");
 			return -1;
 		}
 		if(type==1){
-			if(sh.LoadPixelShader(argv[3],argv[4])){
+			if(sh.LoadPixelShader(argv[3],argv[4], argv[5], argv[6])){
 				con.AddLog("Error \n");
 				return -1;
 			}
 		}else if(type == 2){
-			if(sh.LoadVertexShader(argv[3],argv[4])){
+			if(sh.LoadVertexShader(argv[3],argv[4], argv[5], argv[6])){
 				con.AddLog("Error \n");
 				return -1;
 			}
@@ -115,13 +115,13 @@ ULONG Shader::FindVertexShader(std::string name){
 	return 0;
 }
 
-ULONG Shader::LoadPixelShader(std::string name, std::string pass){
+ULONG Shader::LoadPixelShader(std::string name, std::string func, std::string model, std::string pass){
 	GFW::DX11Device &device = GFW::DX11Device::getInstance();
 	if(this->FindPixelShader(name)){
 		return -1;
 	}
 	ID3D10Blob *buf;
-	D3DX11CompileFromFileA(pass.c_str(), 0, 0, "main", "ps_5_0", 0, 0, 0, &buf,0,0);
+	D3DX11CompileFromFileA(pass.c_str(), 0, 0, func.c_str(), model.c_str(), 0, 0, 0, &buf,0,0);
 	ID3D11PixelShader *psmain_buf;
 	device.getDevice()->CreatePixelShader(buf->GetBufferPointer(), buf->GetBufferSize(), nullptr, &psmain_buf);
 	this->pixsh[name] = psmain_buf;
@@ -144,15 +144,29 @@ ULONG Shader::RemovePixelShader(std::string name){
 	this->pixsh.erase(name);
 	return 0;
 }
+ULONG Shader::AttachPixelShader(std::string name, ID3D11PixelShader *sh) {
+	if(this->FindPixelShader(name)){
+		return -1;
+	}
+	this->pixsh[name] = sh;
+	return 0;
+}
 
-ULONG Shader::LoadVertexShader(std::string name, std::string pass){
+ID3D11PixelShader* Shader::getPixelShader(std::string str) {
+	if (!this->FindPixelShader(str)) {
+		return nullptr;
+	}
+	return this->pixsh[str];
+}
+
+ULONG Shader::LoadVertexShader(std::string name, std::string func, std::string model, std::string pass){
 	GFW::DX11Device &device = GFW::DX11Device::getInstance();
 	if(this->FindVertexShader(name)){
 		return -1;
 	}
 	ID3D11VertexShader *vsmain_buf;
 	ID3D10Blob *buf;
-	D3DX11CompileFromFileA(pass.c_str(), 0, 0, "main", "vs_5_0", 0, 0, 0, &buf,0,0);
+	D3DX11CompileFromFileA(pass.c_str(), 0, 0, func.c_str(), model.c_str(), 0, 0, 0, &buf,0,0);
 	device.getDevice()->CreateVertexShader(buf->GetBufferPointer(), buf->GetBufferSize(), nullptr, &vsmain_buf);
 	this->versh[name] = vsmain_buf;
 	return 0;
@@ -172,6 +186,19 @@ ULONG Shader::RemoveVertexShader(std::string name){
 	this->versh[name]->Release();
 	this->versh.erase(name);
 	return 0;
+}
+ULONG Shader::AttachVertexShader(std::string name, ID3D11VertexShader *sh) {
+	if (this->FindVertexShader(name)) {
+		return -1;
+	}
+	this->versh[name] = sh;
+	return 0;
+}
+ID3D11VertexShader* Shader::getVertexShader(std::string str) {
+	if (!this->FindVertexShader(str)) {
+		return nullptr;
+	}
+	return this->versh[str];
 }
 //
 //Shaderì«Ç›çûÇ›

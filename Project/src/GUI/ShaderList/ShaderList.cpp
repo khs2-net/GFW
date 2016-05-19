@@ -1,4 +1,4 @@
-using namespace GFW::GUI;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 using namespace GFW::GUI;
 
 ShaderList::ShaderList() {
 
@@ -21,7 +21,9 @@ ULONG ShaderList_Inspector_Vertex(void *ptr) {
 
 	ImGui::Text("Name %s", sli->str->c_str());
 	ImGui::Text("Ptr %x", sli->ptr);
-
+	if (ImGui::Button("Set")) {
+		GFW::GUI::Console::getInstance().Run("sh set ver " + *sli->str);
+	}
 	return 0;
 }
 ULONG ShaderList_Inspector_Pixel(void *ptr) {
@@ -39,6 +41,9 @@ ULONG ShaderList_Inspector_Pixel(void *ptr) {
 }
 
 
+ULONG ShaderList::Update() {
+	return 0;
+}
 ULONG ShaderList::Draw() {
 	ULONG ret = 0;
 	ImGuiIO &io = ImGui::GetIO();
@@ -59,9 +64,10 @@ ULONG ShaderList::Draw() {
 			for (auto &v : vs) {
 				if (ImGui::Button(v.first.c_str())) {
 					//inspector‚Ö‚Ì“o˜^
-					sli.str = (std::string*)&v.first;
-					sli.ptr = v.second;
-					ins.Attach(ShaderList_Inspector_Vertex, (void*)&sli);
+					//sli.str = (std::string*)&v.first;
+					//sli.ptr = v.second;
+					//ins.Attach(ShaderList_Inspector_Vertex, (void*)&sli);
+					GFW::GUI::Console::getInstance().Run("sh set ver " + v.first);
 				}
 			}
 			ImGui::TreePop();
@@ -70,10 +76,11 @@ ULONG ShaderList::Draw() {
 			unsigned int i = 0;
 			for (auto &v : ps) {
 				if (ImGui::Button(v.first.c_str())) {
+					GFW::GUI::Console::getInstance().Run("sh set pix " + v.first);
 					//inspector‚Ö‚Ì“o˜^
-					sli.str = (std::string*)&v.first;
-					sli.ptr = v.second;
-					ins.Attach(ShaderList_Inspector_Pixel, (void*)&sli);
+					//sli.str = (std::string*)&v.first;
+					//sli.ptr = v.second;
+					//ins.Attach(ShaderList_Inspector_Pixel, (void*)&sli);
 				}
 			}
 			ImGui::TreePop();
@@ -85,4 +92,4 @@ ULONG ShaderList::Draw() {
 	ImGui::End();
 
 	return ret;
-}
+}                                                                                                                                                                                                          

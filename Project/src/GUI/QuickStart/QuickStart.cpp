@@ -39,6 +39,9 @@ ULONG QuickStart::Run(string str) {
 int QuickStart_TextEditCallbackStub(ImGuiTextEditCallbackData* data) {
 	return 0;
 }
+ULONG QuickStart::Update() {
+	return 0;
+}
 ULONG QuickStart::Draw() {
 	ImGuiIO& io = ImGui::GetIO();
 	if (io.KeyCtrl && io.KeysDown['Q']) {

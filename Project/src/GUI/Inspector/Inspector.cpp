@@ -13,6 +13,9 @@ ULONG Inspector::Attach(ULONG (*func)(void*), void *ptr) {
 	return 0;
 }
 
+ULONG Inspector::Update() {
+	return 0;
+}
 ULONG Inspector::Draw() {
 	if (!this->viewflg)
 		return 0;

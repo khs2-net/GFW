@@ -12,6 +12,7 @@ public:
 		return ins;
 	}
 
+	ULONG Update();
 
 	ULONG Draw();
 protected:

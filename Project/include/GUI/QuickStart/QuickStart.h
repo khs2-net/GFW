@@ -40,6 +40,7 @@ public:
 	ULONG RemoveApp(std::string);
 
 	ULONG Run(std::string);
+	ULONG Update();
 	ULONG Draw();
 
 protected:

@@ -184,13 +184,18 @@
     <ClCompile Include="shared\imgui\imgui_draw.cpp" />
     <ClCompile Include="shared\imgui\imgui_impl_dx11.cpp" />
     <ClCompile Include="shared\imgui\imgui_user.cpp" />
+    <ClCompile Include="src\Config\Config.cpp" />
     <ClCompile Include="src\Device\Device.cpp" />
     <ClCompile Include="src\Device\DirextXDevice.cpp" />
     <ClCompile Include="src\Device\WindowDevice.cpp" />
     <ClCompile Include="src\GUI\Console\Console.cpp" />
     <ClCompile Include="src\GUI\Console\DefaultCommand\DefaultCommand.cpp" />
+    <ClCompile Include="src\GUI\Explorer\DefaultExtension\DefaultExtension.cpp" />
+    <ClCompile Include="src\GUI\Explorer\Explorer.cpp" />
+    <ClCompile Include="src\GUI\Explorer\Extension\Extension.cpp" />
     <ClCompile Include="src\GUI\Inspector\Inspector.cpp" />
     <ClCompile Include="src\GUI\ObjectView\ObjectView.cpp" />
+    <ClCompile Include="src\GUI\PopItem\PopItem.cpp" />
     <ClCompile Include="src\GUI\QuickStart\DefaultQuickStart\DefaultQuickStart.cpp" />
     <ClCompile Include="src\GUI\QuickStart\QuickStart.cpp" />
     <ClCompile Include="src\GUI\Selector\Selector.cpp" />
@@ -207,14 +212,19 @@
     <ClCompile Include="src\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Config.h" />
     <ClInclude Include="include\Device.h" />
     <ClInclude Include="include\Device\DirectXDevice.h" />
     <ClInclude Include="include\Device\WindowDevice.h" />
     <ClInclude Include="include\GUI.h" />
     <ClInclude Include="include\GUI\Console\Console.h" />
     <ClInclude Include="include\GUI\Console\DefaultCommand\DefaultCommand.h" />
+    <ClInclude Include="include\GUI\Explorer\DefaultExtension\DefaultExtension.h" />
+    <ClInclude Include="include\GUI\Explorer\Explorer.h" />
+    <ClInclude Include="include\GUI\Explorer\Extension\Extension.h" />
     <ClInclude Include="include\GUI\Inspector\Inspector.h" />
     <ClInclude Include="include\GUI\ObjectView\ObjectView.h" />
+    <ClInclude Include="include\GUI\PopItem\PopItem.h" />
     <ClInclude Include="include\GUI\QuickStart\DefaultQuickStart\DefaultQuickStart.h" />
     <ClInclude Include="include\GUI\QuickStart\QuickStart.h" />
     <ClInclude Include="include\GUI\Selector\Selector.h" />

@@ -12,6 +12,7 @@ public:
 	}
 
 	ULONG Attach(ULONG (*func)(void*),void *ptr);
+	ULONG Update();
 	ULONG Draw();
 protected:
 private:

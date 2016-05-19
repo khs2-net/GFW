@@ -29,6 +29,12 @@ ULONG Gui::Remove(const _Gui *g){
 	return 0;
 }
 
+ULONG Gui::Update() {
+	for (auto &v : this->gui) {
+		v->Update();
+	}
+	return 0;
+}
 ULONG Gui::Draw() {
 	for (auto &v : this->gui) {
 		v->Draw();

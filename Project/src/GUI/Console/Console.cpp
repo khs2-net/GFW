@@ -169,6 +169,9 @@ int Console::TextEditCallback(ImGuiTextEditCallbackData* data) {
 	//}
 	return 0;
 }
+ULONG Console::Update() {
+	return 0;
+}
 ULONG Console::Draw() {//imgui_demo.cpp‚Æ‚Ù‚Ú“¯‚¶Š´‚¶(line:2177)
 	if (!this->viewflg)
 		return 0;

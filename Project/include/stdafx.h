@@ -11,10 +11,15 @@
 
 #include <comip.h>
 #include <string>
+#include <boost/foreach.hpp>
 #include <boost/thread.hpp>
 #include <boost/noncopyable.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/filesystem.hpp>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/ini_parser.hpp>
+#include <boost/optional.hpp>
+#include <Config.h>
 #include <memory>
 #include <vector>
 #include <list>

@@ -154,6 +154,36 @@
     <Filter Include="include\Type">
       <UniqueIdentifier>{6d4225c0-35ea-45cd-b491-821d6df20107}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\GUI\Explorer">
+      <UniqueIdentifier>{10eae67c-6b63-42b7-8fc6-bd5f6a964dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Explorer">
+      <UniqueIdentifier>{0e0996c5-57ba-4200-854f-a3eb1061131a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Config">
+      <UniqueIdentifier>{339b5da7-1d73-459c-a7f4-c296c5831ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Config">
+      <UniqueIdentifier>{ed615ce0-d559-44ab-9845-6b68658f67c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\PopItem">
+      <UniqueIdentifier>{875b3df9-3e60-4982-9e6c-0320cd82b521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\PopItem">
+      <UniqueIdentifier>{d7e300dd-2b78-455f-8bfb-eec2cc400425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Explorer\Extension">
+      <UniqueIdentifier>{e4f7e761-bf15-4173-85f2-d43a5bf80b7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\Explorer\Extension">
+      <UniqueIdentifier>{d7fb943d-2d8a-44c8-b38b-deddb8859631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GUI\Explorer\DefaultExtension">
+      <UniqueIdentifier>{39c4c645-80f8-4d1c-be83-89e4c9ec0a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI\Explorer\DefaultExtension">
+      <UniqueIdentifier>{09ca54f3-bcbc-4294-895d-c32186600a80}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -207,9 +237,6 @@
     <ClCompile Include="src\Shader\Shader.cpp">
       <Filter>src\Shader</Filter>
     </ClCompile>
-    <ClCompile Include="src\GUI\ShaderList\ShaderList.cpp">
-      <Filter>src\GUI\ShaderList</Filter>
-    </ClCompile>
     <ClCompile Include="src\GUI\QuickStart\DefaultQuickStart\DefaultQuickStart.cpp">
       <Filter>src\GUI\QuickStart\DefaultQuickStart</Filter>
     </ClCompile>
@@ -239,6 +266,24 @@
     </ClCompile>
     <ClCompile Include="src\stdafx.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\ShaderList\ShaderList.cpp">
+      <Filter>src\GUI\ShaderList</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Explorer\Explorer.cpp">
+      <Filter>src\GUI\Explorer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Config\Config.cpp">
+      <Filter>include\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\PopItem\PopItem.cpp">
+      <Filter>src\GUI\PopItem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Explorer\Extension\Extension.cpp">
+      <Filter>src\GUI\Explorer\Extension</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Explorer\DefaultExtension\DefaultExtension.cpp">
+      <Filter>src\GUI\Explorer\DefaultExtension</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -349,6 +394,21 @@
     </ClInclude>
     <ClInclude Include="shared\imgui\imgui_user.h">
       <Filter>Shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Explorer\Explorer.h">
+      <Filter>include\GUI\Explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config.h">
+      <Filter>src\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\PopItem\PopItem.h">
+      <Filter>include\GUI\PopItem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Explorer\Extension\Extension.h">
+      <Filter>include\GUI\Explorer\Extension</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\Explorer\DefaultExtension\DefaultExtension.h">
+      <Filter>include\GUI\Explorer\DefaultExtension</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
